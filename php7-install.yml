@@ -1,9 +1,0 @@
----
-
-#1. Cette tâche installe PHP7 et ses extensions
-- name: "install php70 packages"
-  apt:
-    name: "php7.4"
-    state: latest
-  changed_when: yes
-  notify: [ "apache restart" ]
