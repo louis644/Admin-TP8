@@ -4,9 +4,9 @@
 :warning: Ansible n'est disponible *que* sous Linux !
 
 # Configuration / Architecture
-L'idée est donc de piloter la configuration et le déploiement d'application sur des machines, appelées *nodes* dans le jardon d'Ansible, depuis un "noeud superviseur" ou *node manager*.
+L'idée est donc de piloter la configuration et le déploiement d'applications sur des machines, appelées *nodes* dans le jardon d'Ansible, depuis un "noeud superviseur" ou *node manager*.
 
-Vous aurez donc besoin (a minima) de deux machines, **configurées pour communiquer entre elles**. Vous pouvez bien entendu pour cela réutiliser les deux machines *Serveur* et *Client* utilisées lors du TP "Réseau".
+Vous aurez par conséquent besoin (a minima) de deux machines, **configurées pour communiquer entre elles**. Vous pouvez bien entendu pour cela réutiliser les deux machines *Serveur* et *Client* du TP "Réseau".
 
 :bulb: Si votre système d'exploitation hôte est un Linux, vous pouvez *a priori* vous en servir comme *node manager*, et vous n'avez donc besoin que d'une seule VM (le *node*). 
 
