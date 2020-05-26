@@ -29,6 +29,7 @@ OpenClassRooms propose depuis peu un [cours complet](https://openclassrooms.com/
 ## Différences avec le cours OpenClassRooms
 
  - Adresses IP : les IP de vos machines ne correspondent pas nécessairement à celles utilisées dans le cours ; l'idéal aurait été de créer un réseau NAT, mais j'ai rencontré plusieurs problèmes (notamment de DNS) lorsque j'ai désactivé le DHCP de VirtualBox pour forcer les IP du cours. **Vous pouvez sans problème utiliser les IP configurées dans le TP "Réseau" ou celles proposées par le mode "Pont"**, il faudra juste penser à faire les changements dans les fichiers de configuration d'Ansible quand ce sera nécessaire
+ - **Vous n'utiliserez qu'un seul *node*** sur lequel vous installerez tous les logiciels demandés
  - Dans le cours, les *nodes* tournent sous *CentOS* et non sous Ubuntu, ce qui conduit à un certain nombre de différences qui deviendront claires au fur et à mesure de la lecture :
    - l'auteur part du principe que vous disposez d'un compte *root* sur les nodes ; or, comme vous le savez, le compte *root* est désactivé par défaut sous Ubuntu. On peut tout à fait utiliser Ansible sans compte *root* (si l'on est *sudoer*), mais ceci nécessite de modifier des fichiers de configuration et risque d'induire de mauvaises manipulations dans le TP ; **vous pouvez donc commencer par activer le compte root sur le *node*** 
    - il n'existe pas de groupe *wheel*, **utilisez le groupe *sudo* à la place**
