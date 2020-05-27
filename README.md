@@ -8,13 +8,13 @@ L'idée est donc de piloter la configuration et le déploiement d'applications s
 
 Vous aurez par conséquent besoin (a minima) de deux machines, **configurées pour communiquer entre elles**. Vous pouvez bien entendu pour cela réutiliser les deux machines *Serveur* et *Client* du TP "Réseau".
 
-:bulb: Si votre système d'exploitation hôte est un Linux, vous pouvez *a priori* vous en servir comme *node manager*, et vous n'avez donc besoin que d'une seule VM (le *node*). 
-
 ### Procédure de secours
 Si toutefois vous ne disposiez que d'une seule machine, ou que vous ayez eu des problèmes à faire communiquer vos VMs, le plus simple pour démarrer rapidement ce TP est de :
 
  1. cloner une machine en état de fonctionnement
  2. configurer une interface réseau sur chaque machine en mode **Pont** (ce qui permettra aux machines de se voir, d'aller sur Internet, et même d'être vues depuis la machine hôte).
+
+:bulb: Si votre système d'exploitation hôte est un Linux, vous pouvez *a priori* vous en servir comme *node manager*, et vous n'avez donc besoin que d'une seule VM (le *node*). 
 
 :bulb: Par ailleurs, vous aurez besoin d'effectuer un certain nombre de copier-coller ; **une connexion ssh sur vos VMs est donc indispensable**. Pour rappel, Windows 10 intègre désormais un client ssh natif, et vous pouvez aussi utiliser *[cmder](http://cmder.net/)*. De plus, aucune configuration particulière (en particulier, une redirection de port) n'est nécessaire si vos machines sont en mode *Pont* (puisque la machine hôte les "voit", vous pouvez vous y connecter directement en saisissant `ssh AdresseIP`).
 
